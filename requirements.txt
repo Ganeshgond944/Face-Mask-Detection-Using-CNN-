@@ -1,0 +1,11 @@
+Flask
+tensorflow
+keras
+opencv-python>=4.8,<5.0
+numpy
+matplotlib
+pandas
+scikit-learn
+Pillow
+seaborn
+Werkzeug

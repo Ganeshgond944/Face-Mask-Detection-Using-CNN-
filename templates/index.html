@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NeuroShield AI | Face Mask Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<header class="site-header"><a class="brand" href="{{ url_for('index') }}"><span class="brand-mark">N</span> NEUROSHIELD <span class="brand-accent">AI</span></a><nav><a class="active" href="{{ url_for('index') }}">Home</a><a href="{{ url_for('upload') }}">Upload</a><a href="{{ url_for('live') }}">Live Camera</a><a href="{{ url_for('about') }}">About</a></nav></header>
+<main>
+<section class="hero"><div class="hero-copy"><p class="eyebrow">AI-POWERED COMPUTER VISION</p><h1>Face mask detection, <span>made simple.</span></h1><p class="lead">Analyze uploaded images or use your browser camera to identify mask usage with a trained convolutional neural network.</p><div class="actions"><a class="btn btn-primary" href="{{ url_for('upload') }}">Analyze an image ↗</a><a class="btn btn-secondary" href="{{ url_for('live') }}">Open live camera</a></div></div><div class="hero-panel"><div class="status-dot"></div><p class="panel-label">SYSTEM STATUS</p><h2>Model online</h2><p>TensorFlow CNN + OpenCV face detection</p><div class="mini-grid"><div><strong>2</strong><span>Classes</span></div><div><strong>128²</strong><span>Input size</span></div><div><strong>Live</strong><span>Inference</span></div></div></div></section>
+<section class="feature-grid"><article><span class="feature-number">01</span><h3>Image analysis</h3><p>Upload JPG, JPEG, PNG, BMP, or WEBP images and receive annotated detection results.</p><a href="{{ url_for('upload') }}">Try upload →</a></article><article><span class="feature-number">02</span><h3>Live detection</h3><p>Use your browser camera with explicit permission and view face-level predictions in real time.</p><a href="{{ url_for('live') }}">Start camera →</a></article><article><span class="feature-number">03</span><h3>Transparent workflow</h3><p>See the detected face count, confidence, processing time, and annotated output image.</p><a href="{{ url_for('about') }}">Explore system →</a></article></section>
+</main><footer><span>© 2026 NeuroShield AI</span><span>Built with Flask · TensorFlow · OpenCV</span></footer>
+</body></html>

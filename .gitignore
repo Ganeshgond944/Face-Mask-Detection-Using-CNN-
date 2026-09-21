@@ -1,0 +1,31 @@
+# Virtual Environments
+.venv/
+.python311/
+env/
+venv/
+ENV/
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Datasets (Large image collections)
+Dataset/
+Face Mask Dataset/
+
+# Dynamic Web Uploads and Processed Results
+static/uploads/*
+!static/uploads/.gitkeep
+static/results/*
+!static/results/.gitkeep
+
+# Logs
+output/logs/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
